@@ -15,7 +15,7 @@ h1, p {
     grid-template-areas: 
         "pack-name pack-name pad-header pad-header"
         "pad-container pad-container video video"
-        "pad-container pad-container video video"
+        "pad-container pad-container pad-buttons pad-buttons"
         "footer footer footer footer"
     ;
     height: 550px;
@@ -31,9 +31,7 @@ h1, p {
 .pack-name, .pad-header, h3, .footer {
     color: rgb(243, 214, 249);
     font-weight: bold;
-    /* font-style: italic; */
-    font-variant: small-caps;
-    font-family: cursive;
+    text-shadow: 1px 1px 1px rgb(162, 245, 240);
 }
 
 .pack-name {
@@ -45,6 +43,11 @@ h1, p {
 
 .pad-header {
     grid-area: pad-header;
+    display: inline-block;
+    /* text-align:center; */
+    font-variant: small-caps;
+    margin-right: 23px;
+    
 }
 
 .pack-name, .pad-header {
@@ -67,6 +70,8 @@ h1, p {
     background-color: rgb(42, 40, 40);
     box-shadow: 1px 2px 3px black;
     color: darkgrey;
+    text-align: center;
+    font-weight: lighter;
 }
 
 .container, .pad-item, .video {
@@ -85,6 +90,10 @@ h1, p {
     border-width: thick;  
 }
 
+.pad-buttons {
+    grid-area: pad-buttons;
+}
+
 .footer {
     grid-area: footer;
     max-height: fit-content;
@@ -98,17 +107,58 @@ h1, p {
 }
 
 h3 {
-    border-bottom: double;
-    border-color:  rgb(243, 214, 249);
+    font-size: xx-large;
+    -webkit-transform: scale(2, 2);
+    letter-spacing: 8px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .pad-header > p {
     color: rgb(243, 214, 249);
     border-top: double;
+    border-width: thick;
     border-color:  rgb(243, 214, 249);
+    letter-spacing: 8px;
+    margin-top: 1px;
+    margin-right: 20px;
 }
 
-/* This was before the online grid layout suggestion */
+button {
+    align-content: center;
+    margin: 10px;
+    width: 90px;
+    height:50px;
+    cursor: pointer;
+    background-color: rgb(42, 40, 40);
+    box-shadow: 1px 2px 3px black;
+    color: darkgrey;
+}
+
+.pause {
+    border-radius: 10px 10px 10px 100px;
+}
+
+.play {
+    border-radius: 100px 10px 10px 10px;
+}
+
+.stop {
+    border-radius: 10px 100px 10px 10px;
+}
+
+.save {
+    border-radius: 10px 10px 100px 10px;
+}
+
+.forward, .backward, .add {
+    border-radius: 5px 5px 5px 5px;
+}
+
+.add {
+    width: 205px;
+}
 
 
 
