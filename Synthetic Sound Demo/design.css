@@ -1,3 +1,29 @@
+@font-face {
+    font-family: 'Pricedown';
+    src: url('Pricedown.eot');
+    src: url('Pricedown.eot?#iefix') format('embedded-opentype'),
+        url('Pricedown.woff2') format('woff2'),
+        url('Pricedown.woff') format('woff'),
+        url('Pricedown.ttf') format('truetype'),
+        url('Pricedown.svg#Pricedown') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rage';
+    src: url('RageItalic.eot');
+    src: url('RageItalic.eot?#iefix') format('embedded-opentype'),
+        url('RageItalic.woff2') format('woff2'),
+        url('RageItalic.woff') format('woff'),
+        url('RAGE.TTF') format('truetype'),
+        url('RageItalic.svg#RageItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
 body {
     background-color: rgb(62, 22, 34);
     color: aliceblue;
@@ -28,7 +54,7 @@ h1, p {
     box-shadow: 1px 2px 3px black;
 }
 
-.pack-name, .pad-header, h3, .footer {
+.pad-header, h3, .footer {
     color: rgb(243, 214, 249);
     font-weight: bold;
     text-shadow: 1px 1px 1px rgb(162, 245, 240);
@@ -106,6 +132,21 @@ h1, p {
     cursor: pointer;
 }
 
+strong {
+    font-family: "Pricedown";
+    font-size: 20px;
+    -webkit-text-stroke: 1px black;
+
+}
+
+span {
+    font-family: "Rage";
+    font-size: 60px;
+    text-shadow: 1px 1px 1px palevioletred;
+    margin: 1px;
+    -webkit-transform: rotate(-10deg);
+}
+
 h3 {
     font-size: xx-large;
     -webkit-transform: scale(2, 2);
@@ -148,16 +189,16 @@ button {
     border-radius: 10px 100px 10px 10px;
 }
 
-.save {
+/* .save {
     border-radius: 10px 10px 100px 10px;
-}
+} */
 
 .forward, .backward, .add {
     border-radius: 5px 5px 5px 5px;
 }
 
 .add {
-    width: 205px;
+    width: 318px;
 }
 
 
