@@ -1,0 +1,26 @@
+.pad-container {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: 40px 40px 40px 40px;
+    height: 550px;
+    width:80%;
+    background-image: url("Vice-City-wallpaper.jpg");
+    background-size: cover;
+    align-content: center;
+}
+
+.pad-container, .pad-item {
+    border-radius: 10px 10px 10px 10px;
+    border-style: solid;
+}
+
+.pad-item {
+    position:relative;
+    width: 75px;
+    height: 75px;
+    margin: 5px;
+    margin-left: 100%;
+    background-color: rgb(42, 40, 40);
+    box-shadow: 1px 2px 3px black;
+    color: darkgrey;
+}
