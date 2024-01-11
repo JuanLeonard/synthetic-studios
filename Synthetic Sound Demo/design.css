@@ -25,7 +25,7 @@
 }
 
 body {
-    background-color: rgb(62, 22, 34);
+    background-color: black;
     color: aliceblue;
 }
 
@@ -46,7 +46,7 @@ h1, p {
     ;
     height: 550px;
     margin: auto;
-    width:80%;
+    width:70%;
     background-image: url("Vice-City-wallpaper.jpg");
     background-size: cover;
     align-content: center;
@@ -85,6 +85,7 @@ h1, p {
     display: grid;
     column-gap: 50px;
     grid-template-columns: 40px 40px 40px 40px;
+    margin-left: 40px;
 }
 
 .pad-item {
@@ -107,7 +108,7 @@ h1, p {
 
 .video {
     grid-area: video;
-    max-width: 450px;
+    max-width: 435px;
     max-height: 200px;
     color: darkgrey;
     background-color: rgb(42, 40, 40);
